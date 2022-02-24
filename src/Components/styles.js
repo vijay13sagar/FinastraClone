@@ -384,7 +384,6 @@ export const FlexHor = styled.div`
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: red;
   @media (max-width: 640px) {
     flex-direction: column;
     width: 80%;
