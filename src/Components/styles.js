@@ -384,9 +384,12 @@ export const FlexHor = styled.div`
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: red;
   @media (max-width: 640px) {
     flex-direction: column;
-    width: auto;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
   }
  `;
 export const ArtCont = styled.div`
@@ -394,6 +397,9 @@ export const ArtCont = styled.div`
   height: auto;
   width: 12.5%;
   flex-wrap: wrap;
+  @media (max-width: 640px) {
+    width: 60%;
+  }
  `;
 export const ArtText = styled.p`
    font-family: Roboto,Arial, Helvetica, sans-serif,;
@@ -406,11 +412,15 @@ export const ArtText = styled.p`
  `;
 export const PolicyCont = styled.div`
   width: 100vw-8px;
-  height: 10vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: ${palette.GreyBg};
+  @media (max-width: 640px) {
+    flex-wrap: wrap;
+    width: auto;
+  }
  `;
 export const TermText = styled.p`
   font-family: ${props => props.bold ? 'Roboto,Arial,sans-serif' : 'PT Sans', 'sans-serif'};
